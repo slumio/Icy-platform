@@ -101,6 +101,9 @@ You can watch the demo video here:
 ![Screenshot From 2025-08-07 13-46-22](https://github.com/slumio/Icy-platform/blob/main/png3)
 #### Screenshot 3:
 ![Screenshot From 2025-08-07 13-46-22](https://github.com/slumio/Icy-platform/blob/main/png1)
+#### Screenshot 4:
+![Screenshot From 2025-08-07 13-46-22](https://github.com/slumio/Icy-platform/blob/main/png4.png)
+
 
 
 
