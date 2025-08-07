@@ -1,0 +1,52 @@
+# A descriptive name for your automated workflow
+name: Deploy ICY Platform
+
+# --- Trigger ---
+# This workflow runs automatically on every push to the 'main' branch
+on:
+  push:
+    branches: [ main ]
+
+# --- Jobs ---
+# A workflow is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This job is named 'deploy'
+  deploy:
+    # The type of machine to run the job on. 'ubuntu-latest' is standard.
+    runs-on: ubuntu-latest
+
+    # --- Steps ---
+    # A sequence of tasks that will be executed as part of the job
+    steps:
+      # Step 1: Check out your repository's code
+      # This action checks out your repository onto the runner, allowing you to run scripts.
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Deploy the Backend to Heroku using its Dockerfile
+      - name: Deploy Backend to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          # Your Heroku API key, stored securely as a GitHub secret
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          # The name of your application on Heroku
+          heroku_app_name: "icy-platform-backend"
+          # The email address associated with your Heroku account
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          # Tell Heroku to use the Dockerfile for deployment
+          usedocker: true
+          # Specify the directory where the Dockerfile is located
+          docker_build_directory: ./backend
+
+      # Step 3: Deploy the Frontend to Vercel
+      - name: Deploy Frontend to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          # Your Vercel access token, stored as a GitHub secret
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          # Your Vercel organization ID, found in your Vercel account settings
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          # Your Vercel project ID, found in your project's settings on Vercel
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          # Specify which directory to deploy
+          working-directory: ./frontend

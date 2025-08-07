@@ -1,0 +1,15 @@
+# --- Core Web Framework & Server ---
+fastapi
+uvicorn[standard]
+
+# --- Data Validation & Database ---
+pydantic
+# beanie # ODM for MongoDB, would be used in a real DB implementation
+
+# --- External Service Clients ---
+openai
+sendgrid
+requests
+
+# --- Configuration Management ---
+python-dotenv

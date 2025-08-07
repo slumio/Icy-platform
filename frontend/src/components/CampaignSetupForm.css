@@ -1,0 +1,84 @@
+.form-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    background: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .form-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .campaign-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .campaign-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+  .campaign-form input,
+  .campaign-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    font-size: 1rem;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .campaign-form input:focus,
+  .campaign-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  .campaign-form small {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #95a5a6;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+  .submit-btn:disabled {
+    background: #bdc3c7;
+    cursor: wait;
+  }

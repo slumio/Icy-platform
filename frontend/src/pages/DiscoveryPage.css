@@ -1,0 +1,65 @@
+.discovery-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .discovery-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .discovery-header p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+  }
+  
+  .influencer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .loading-container, .error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .error-container h2 {
+      color: #c0392b;
+  }
+  
+  .home-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+  }
+  
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1.5rem;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #e9ecef;
+    margin: 4rem 0;
+  }
