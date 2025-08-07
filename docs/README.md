@@ -46,12 +46,6 @@
 - **Test Campaigns**: Before committing to a large-scale partnership, consider running a smaller test campaign with an influencer to see if their audience engages with your product and whether there’s any conversion.
 - **Follower Feedback**: If possible, analyze the comments and feedback from the influencer’s followers. Are they asking about the product? Are they excited about it? This can give you a good sense of how well your brand will be received.
 
-## Steps to Find the Right Influencer
-1. **Define Your Goals**: Whether it's increasing brand awareness, driving traffic, or boosting sales, knowing your goals will guide your influencer selection.
-2. **Research Influencers**: Use tools like BuzzSumo, Upfluence, or Influencity to search for influencers within your niche.
-3. **Engagement Metrics**: Evaluate potential influencers based on engagement rate, audience demographics, and past performance.
-4. **Test Campaigns**: Start small and track the performance of the influencer’s content to see if they bring the desired results.
-
 
 # Demo Video
 
@@ -63,6 +57,7 @@ You can watch the demo video here:
 ![Screenshot From 2025-08-07 13-46-22](https://github.com/slumio/Icy-platform/blob/main/png2)
 #### Screenshot 2:
 ![Screenshot From 2025-08-07 13-46-22](https://github.com/slumio/Icy-platform/blob/main/png1)
+
 
 
 
